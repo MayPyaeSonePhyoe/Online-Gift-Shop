@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="cartcss.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
+</head>
+<body>
+  <header>
+    <div class="nav">
+
+      <a href="#" class="logo">
+	<i class="fa fa-gift" aria-hidden="true"></i>
+        Online Gift Shop
+      </a>
+
+      <div class="box">
+        <div class="cart-count">0</div>
+        <ion-icon name="cart"  id="cart-icon" ></ion-icon>
+      </div>
+
+      <div class="cart">
+        <div class="cart-title">Cart Items</div>
+        <div class="cart-content">
+
+        </div>
+        
+      <div class="total">
+        <div class="total-title">Total</div>
+        <div class="total-price">Rs.0</div>
+      </div>
+
+      <button class="btn-buy" onclick="myOrder()">Order</button>
+
+      <ion-icon name="close" id="cart-close"></ion-icon>
+
+      </div>
+    </div>
+  </header>
+  <div class="container">
+    <h2 class="title">The gift can be small but the warmth and tenderness are big</h2>
+    <div class="shop-content">
+
+
+      <div class="flower-box">
+        <div class="pic">
+          <img src="f1.jpg" class="flower-img">
+        </div>
+        <h2 class="flower-title">Carnation Bouquet</h2>
+        <span class="flower-price">30000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+
+      <div class="flower-box">
+        <div class="pic"><img src="f56.jpg" class="flower-img"></div>
+        <h2 class="flower-title">Pink Rose Bouquet</h2>
+        <span class="flower-price">20000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+  
+      <div class="flower-box">
+        <div class="pic"><img src="f17.jpg" class="flower-img"></div>
+        <h2 class="flower-title">Red Rose Bouquet</h2>
+        <span class="flower-price">20000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+  
+      <div class="flower-box">
+        <div class="pic"><img src="f32.jpg" class="flower-img"></div>
+        <h2 class="flower-title">Orchit Bouquet</h2>
+        <span class="flower-price">30000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+  
+      <div class="flower-box">
+        <div class="pic"><img src="f5.jpg" class="flower-img"></div>
+        <h2 class="flower-title">Daisy Bouquet</h2>
+        <span class="flower-price">20000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+  
+      <div class="flower-box">
+        <div class="pic"><img src="f6.jpg" class="flower-img"></div>
+        <h2 class="flower-title">Lily Bouquet</h2>
+        <span class="flower-price">30000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+  
+  
+      <div class="flower-box">
+        <div class="pic"><img src="f35.jpg" class="flower-img"></div>
+        <h2 class="flower-title">Tulip Bouquet</h2>
+        <span class="flower-price">30000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+  
+  
+      <div class="flower-box">
+        <div class="pic"><img src="f48.jpg" class="flower-img"></div>
+        <h2 class="flower-title">Pink Baby Breath Bouquet</h2>
+        <span class="flower-price">20000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+ 
+	<div class="flower-box">
+        <div class="pic"><img src="f9.jpg" class="flower-img"></div>
+        <h2 class="flower-title">Marigold Bouquet</h2>
+        <span class="flower-price">25000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+	<div class="flower-box">
+        <div class="pic"><img src="f52.jpg" class="flower-img"></div>
+        <h2 class="flower-title">Purple Baby Breath Bouquet</h2>
+        <span class="flower-price">20000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+	<div class="flower-box">
+        <div class="pic"><img src="f11.jpg" class="flower-img"></div>
+        <h2 class="flower-title">Aster Bouquet</h2>
+        <span class="flower-price">30000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+	<div class="flower-box">
+        <div class="pic"><img src="f12.jpg" class="flower-img"></div>
+        <h2 class="flower-title">Sunflower Bouquet</h2>
+        <span class="flower-price">20000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+
+
+
+	<div class="flower-box">
+        <div class="pic"><img src="p1.jpg" class="flower-img"></div>
+        <h2 class="flower-title">Crochet Rabbit</h2>
+        <span class="flower-price">50000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+	<div class="flower-box">
+        <div class="pic"><img src="p43.jpg" class="flower-img"></div>
+        <h2 class="flower-title">Crochet Flower Bouquet</h2>
+        <span class="flower-price">50000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+	<div class="flower-box">
+        <div class="pic"><img src="p3.jpg" class="flower-img"></div>
+        <h2 class="flower-title">Crochet Flowers</h2>
+        <span class="flower-price">30000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+<div class="flower-box">
+        <div class="pic"><img src="p4.jpg" class="flower-img"></div>
+        <h2 class="flower-title">Crochet Flower Plant</h2>
+        <span class="flower-price">35000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+<div class="flower-box">
+        <div class="pic"><img src="p5.jpg" class="flower-img"></div>
+        <h2 class="flower-title">Crochet Tulip Bouquet</h2>
+        <span class="flower-price">15000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+<div class="flower-box">
+        <div class="pic"><img src="p14.jpg" class="flower-img"></div>
+        <h2 class="flower-title">Crochet Rabbit plant</h2>
+        <span class="flower-price">20000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+<div class="flower-box">
+        <div class="pic"><img src="p7.jpg" class="flower-img"></div>
+        <h2 class="flower-title">Crochet Carnation Bouqet</h2>
+        <span class="flower-price">20000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+<div class="flower-box">
+        <div class="pic"><img src="p44.jpg" class="flower-img"></div>
+        <h2 class="flower-title">Crochet Dinosaur</h2>
+        <span class="flower-price">20000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+<div class="flower-box">
+        <div class="pic"><img src="p37.jpg" class="flower-img"></div>
+        <h2 class="flower-title">Crochet Lama Doll</h2>
+        <span class="flower-price">10000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+<div class="flower-box">
+        <div class="pic"><img src="p16.jpg" class="flower-img"></div>
+        <h2 class="flower-title">Crochet Girl Doll</h2>
+        <span class="flower-price">30000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+<div class="flower-box">
+        <div class="pic"><img src="p17.jpg" class="flower-img"></div>
+        <h2 class="flower-title">Crochet Rabbit Doll</h2>
+        <span class="flower-price">25000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+<div class="flower-box">
+        <div class="pic"><img src="p10.jpg" class="flower-img"></div>
+        <h2 class="flower-title">Crochet Keychain</h2>
+        <span class="flower-price">10000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+
+
+
+<div class="flower-box">
+        <div class="pic"><img src="doll13.jpg" class="flower-img"></div>
+        <h2 class="flower-title">Duck Doll</h2>
+        <span class="flower-price">10000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+<div class="flower-box">
+        <div class="pic"><img src="doll2.jpg" class="flower-img"></div>
+        <h2 class="flower-title">Pig Doll</h2>
+        <span class="flower-price">12000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+<div class="flower-box">
+        <div class="pic"><img src="doll3.jpg" class="flower-img"></div>
+        <h2 class="flower-title">Rabbit Doll</h2>
+        <span class="flower-price">15000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+<div class="flower-box">
+        <div class="pic"><img src="doll4.jpg" class="flower-img"></div>
+        <h2 class="flower-title">Lego Doll</h2>
+        <span class="flower-price">30000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+<div class="flower-box">
+        <div class="pic"><img src="doll5.jpg" class="flower-img"></div>
+        <h2 class="flower-title">Big bear Doll</h2>
+        <span class="flower-price">80000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+<div class="flower-box">
+        <div class="pic"><img src="doll6.jpg" class="flower-img"></div>
+        <h2 class="flower-title">Stitch Doll</h2>
+        <span class="flower-price">10000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+<div class="flower-box">
+        <div class="pic"><img src="doll7.jpg" class="flower-img"></div>
+        <h2 class="flower-title">Frog Doll</h2>
+        <span class="flower-price">20000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+<div class="flower-box">
+        <div class="pic"><img src="doll8.jpg" class="flower-img"></div>
+        <h2 class="flower-title">Dog Doll</h2>
+        <span class="flower-price">15000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+<div class="flower-box">
+        <div class="pic"><img src="doll9.jpg" class="flower-img"></div>
+        <h2 class="flower-title">Red Panda Doll</h2>
+        <span class="flower-price">30000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+<div class="flower-box">
+        <div class="pic"><img src="doll10.jpg" class="flower-img"></div>
+        <h2 class="flower-title">Octopus Doll</h2>
+        <span class="flower-price">15000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+<div class="flower-box">
+        <div class="pic"><img src="doll11.jpg" class="flower-img"></div>
+        <h2 class="flower-title">Flower Doll</h2>
+        <span class="flower-price">10000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+
+
+
+
+<div class="flower-box">
+        <div class="pic"><img src="r11.jpg" class="flower-img"></div>
+        <h2 class="flower-title">Gold Ring</h2>
+        <span class="flower-price">1000000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+<div class="flower-box">
+        <div class="pic"><img src="r3.jpg" class="flower-img"></div>
+        <h2 class="flower-title">Gold Ring</h2>
+        <span class="flower-price">1000000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+<div class="flower-box">
+        <div class="pic"><img src="r15.jpg" class="flower-img"></div>
+        <h2 class="flower-title">Solitaire Flower</h2>
+        <span class="flower-price">2000000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+<div class="flower-box">
+        <div class="pic"><img src="r5.jpg" class="flower-img"></div>
+        <h2 class="flower-title">Amethyst Promise Ring</h2>
+        <span class="flower-price">2000000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+<div class="flower-box">
+        <div class="pic"><img src="r6.jpg" class="flower-img"></div>
+        <h2 class="flower-title">Pink Cushion Cut EVN Diamond</h2>
+        <span class="flower-price">3000000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+<div class="flower-box">
+        <div class="pic"><img src="r24.jpg" class="flower-img"></div>
+        <h2 class="flower-title">Gold with Red Stone Heart</h2>
+        <span class="flower-price">1000000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+<div class="flower-box">
+        <div class="pic"><img src="r8.jpg" class="flower-img"></div>
+        <h2 class="flower-title">Overnight Mount</h2>
+        <span class="flower-price">2000000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+<div class="flower-box">
+        <div class="pic"><img src="r9.jpg" class="flower-img"></div>
+        <h2 class="flower-title">Cubic Heart</h2>
+        <span class="flower-price">2000000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+<div class="flower-box">
+        <div class="pic"><img src="r7.jpg" class="flower-img"></div>
+        <h2 class="flower-title">18K White Gold</h2>
+        <span class="flower-price">2000000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+<div class="flower-box">
+        <div class="pic"><img src="n8.jpg" class="flower-img"></div>
+        <h2 class="flower-title">Sweet Crystal Moon</h2>
+        <span class="flower-price">80000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+<div class="flower-box">
+        <div class="pic"><img src="n7.jpg" class="flower-img"></div>
+        <h2 class="flower-title">Eternal Love of Dream</h2>
+        <span class="flower-price">80000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+<div class="flower-box">
+        <div class="pic"><img src="n11.jpg" class="flower-img"></div>
+        <h2 class="flower-title">Circle Sticker With Silk</h2>
+        <span class="flower-price">90000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+
+
+<div class="flower-box">
+        <div class="pic"><img src="n5.jpg" class="flower-img"></div>
+        <h2 class="flower-title">Gold Star Necklace</h2>
+        <span class="flower-price">90000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+
+
+<div class="flower-box">
+        <div class="pic"><img src="n2.jpg" class="flower-img"></div>
+        <h2 class="flower-title">Angle Wings </h2>
+        <span class="flower-price">90000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+
+
+<div class="flower-box">
+        <div class="pic"><img src="c7.jpg" class="flower-img"></div>
+        <h2 class="flower-title">Moonstone FishTail</h2
+        <span class="flower-price">90000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+
+
+<div class="flower-box">
+        <div class="pic"><img src="c2.jpg" class="flower-img"></div>
+        <h2 class="flower-title">Rose Gold Bracelet</h2>
+        <span class="flower-price">90000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+
+
+<div class="flower-box">
+        <div class="pic"><img src="c10.jpg" class="flower-img"></div>
+        <h2 class="flower-title">PinkCushion Bracelet</h2>
+        <span class="flower-price">80000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+
+
+<div class="flower-box">
+        <div class="pic"><img src="c17.jpg" class="flower-img"></div>
+        <h2 class="flower-title">Charm Bracelet</h2>
+        <span class="flower-price">80000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+
+
+<div class="flower-box">
+        <div class="pic"><img src="c12.jpg" class="flower-img"></div>
+        <h2 class="flower-title">Pearl and Goldstone Charm</h2>
+        <span class="flower-price">80000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+
+
+
+
+
+<div class="flower-box">
+        <div class="pic"><img src="h1.jpg" class="flower-img"></div>
+        <h2 class="flower-title">18k gold hair claws</h2>
+        <span class="flower-price">10000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+
+<div class="flower-box">
+        <div class="pic"><img src="h2.jpg" class="flower-img"></div>
+        <h2 class="flower-title">CHANEL hair clip </h2>
+        <span class="flower-price">50000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+
+
+<div class="flower-box">
+        <div class="pic"><img src="h3.jpg" class="flower-img"></div>
+        <h2 class="flower-title">CHANEL hair clip</h2>
+        <span class="flower-price">80000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+
+<div class="flower-box">
+        <div class="pic"><img src="h4.jpg" class="flower-img"></div>
+        <h2 class="flower-title">PRADA hair clip</h2>
+        <span class="flower-price">50000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+
+<div class="flower-box">
+        <div class="pic"><img src="h5.jpg" class="flower-img"></div>
+        <h2 class="flower-title">GUCCI hair pin</h2>
+        <span class="flower-price">50000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+
+<div class="flower-box">
+        <div class="pic"><img src="h6.jpg" class="flower-img"></div>
+        <h2 class="flower-title">BURBERRY hair pin</h2>
+        <span class="flower-price">50000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+
+<div class="flower-box">
+        <div class="pic"><img src="h7.jpg" class="flower-img"></div>
+        <h2 class="flower-title">GUCCI hair pin</h2>
+        <span class="flower-price">60000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+
+<div class="flower-box">
+        <div class="pic"><img src="h8.jpg" class="flower-img"></div>
+        <h2 class="flower-title">PRADA hair pin</h2>
+        <span class="flower-price">30000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+
+<div class="flower-box">
+        <div class="pic"><img src="h17.jpg" class="flower-img"></div>
+        <h2 class="flower-title">Pearl hair clip</h2>
+        <span class="flower-price">15000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+
+<div class="flower-box">
+        <div class="pic"><img src="h10.jpg" class="flower-img"></div>
+        <h2 class="flower-title">Project hair clips</h2>
+        <span class="flower-price">10000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+
+<div class="flower-box">
+        <div class="pic"><img src="h11.jpg" class="flower-img"></div>
+        <h2 class="flower-title">DIOR hair clip set</h2>
+        <span class="flower-price">80000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+
+<div class="flower-box">
+        <div class="pic"><img src="h21.jpg" class="flower-img"></div>
+        <h2 class="flower-title">Faux pearl hair tie</h2>
+        <span class="flower-price">15000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+
+<div class="flower-box">
+        <div class="pic"><img src="h13.jpg" class="flower-img"></div>
+        <h2 class="flower-title">DIOR scrunchy</h2>
+        <span class="flower-price">80000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+<div class="flower-box">
+        <div class="pic"><img src="h18.jpg" class="flower-img"></div>
+        <h2 class="flower-title">Asthetic surnchies</h2>
+        <span class="flower-price">10000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+
+<div class="flower-box">
+        <div class="pic"><img src="h15.jpg" class="flower-img"></div>
+        <h2 class="flower-title">CELINE scrunchy</h2>
+        <span class="flower-price">50000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+
+<div class="flower-box">
+        <div class="pic"><img src="h16.jpg" class="flower-img"></div>
+        <h2 class="flower-title">CELINE scrunchy brown silk</h2>
+        <span class="flower-price">50000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+
+
+
+
+
+
+<div class="flower-box">
+        <div class="pic"><img src="card1.jpg" class="flower-img"></div>
+        <h2 class="flower-title">Asthetic gift card</h2>
+        <span class="flower-price">20000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+
+<div class="flower-box">
+        <div class="pic"><img src="card2.jpg" class="flower-img"></div>
+        <h2 class="flower-title">White gift card</h2>
+        <span class="flower-price">15000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+
+<div class="flower-box">
+        <div class="pic"><img src="card14.jpg" class="flower-img"></div>
+        <h2 class="flower-title">Colorful gift card</h2>
+        <span class="flower-price">10000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+<div class="flower-box">
+        <div class="pic"><img src="card8.jpg" class="flower-img"></div>
+        <h2 class="flower-title">Ribbon gift card</h2>
+        <span class="flower-price">10000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+<div class="flower-box">
+        <div class="pic"><img src="card11.jpg" class="flower-img"></div>
+        <h2 class="flower-title">Butterfly gift card</h2>
+        <span class="flower-price">30000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+<div class="flower-box">
+        <div class="pic"><img src="card13.jpg" class="flower-img"></div>
+        <h2 class="flower-title">Flower gift card</h2>
+        <span class="flower-price">12000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+<div class="flower-box">
+        <div class="pic"><img src="card7.jpg" class="flower-img"></div>
+        <h2 class="flower-title">Gift card with box</h2>
+        <span class="flower-price">50000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+<div class="flower-box">
+        <div class="pic"><img src="card3.jpg" class="flower-img"></div>
+        <h2 class="flower-title">Simple gift card</h2>
+        <span class="flower-price">5000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+<div class="flower-box">
+        <div class="pic"><img src="card9.jpg" class="flower-img"></div>
+        <h2 class="flower-title">Gift card with emvelop</h2>
+        <span class="flower-price">8000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+
+
+
+<div class="flower-box">
+        <div class="pic"><img src="b1.jpg" class="flower-img"></div>
+        <h2 class="flower-title">Mixed items gift box</h2>
+        <span class="flower-price">30000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+<div class="flower-box">
+        <div class="pic"><img src="b2.jpg" class="flower-img"></div>
+        <h2 class="flower-title">Relax-candle gift box</h2>
+        <span class="flower-price">50000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+
+<div class="flower-box">
+        <div class="pic"><img src="b3.jpg" class="flower-img"></div>
+        <h2 class="flower-title">Mixed items gift box</h2>
+        <span class="flower-price">30000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+
+<div class="flower-box">
+        <div class="pic"><img src="b4.jpg" class="flower-img"></div>
+        <h2 class="flower-title">Coffee gift box</h2>
+        <span class="flower-price">40000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+<div class="flower-box">
+        <div class="pic"><img src="b5.jpg" class="flower-img"></div>
+        <h2 class="flower-title">Bath items gift box</h2>
+        <span class="flower-price">30000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+
+
+<div class="flower-box">
+        <div class="pic"><img src="b6.jpg" class="flower-img"></div>
+        <h2 class="flower-title">Handmade items gift box</h2>
+        <span class="flower-price">20000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+
+<div class="flower-box">
+        <div class="pic"><img src="b7.jpg" class="flower-img"></div>
+        <h2 class="flower-title">Scrunchies gift box</h2>
+        <span class="flower-price">20000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+
+<div class="flower-box">
+        <div class="pic"><img src="b28.jpg" class="flower-img"></div>
+        <h2 class="flower-title">Accessories box</h2>
+        <span class="flower-price">50000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+<div class="flower-box">
+        <div class="pic"><img src="b10.jpg" class="flower-img"></div>
+        <h2 class="flower-title">Accessories box</h2>
+        <span class="flower-price">60000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+
+<div class="flower-box">
+        <div class="pic"><img src="b23.jpg" class="flower-img"></div>
+        <h2 class="flower-title">3CE lipsticks box</h2>
+        <span class="flower-price">120000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+
+<div class="flower-box">
+        <div class="pic"><img src="b12.jpg" class="flower-img"></div>
+        <h2 class="flower-title">Makeup gift box</h2>
+        <span class="flower-price">50000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+
+<div class="flower-box">
+        <div class="pic"><img src="b13.jpg" class="flower-img"></div>
+        <h2 class="flower-title">Makeup gift box</h2>
+        <span class="flower-price">30000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+
+<div class="flower-box">
+        <div class="pic"><img src="b14.jpg" class="flower-img"></div>
+        <h2 class="flower-title">3CE lipsticks set box</h2>
+        <span class="flower-price">150000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+
+<div class="flower-box">
+        <div class="pic"><img src="b15.jpg" class="flower-img"></div>
+        <h2 class="flower-title">3CE makeup set box</h2>
+        <span class="flower-price">120000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+
+<div class="flower-box">
+        <div class="pic"><img src="b22.jpg" class="flower-img"></div>
+        <h2 class="flower-title">HANDAIYAN lipstick box</h2>
+        <span class="flower-price">50000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+
+<div class="flower-box">
+        <div class="pic"><img src="b17.jpg" class="flower-img"></div>
+        <h2 class="flower-title">Perfume gift box</h2>
+        <span class="flower-price">30000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+
+<div class="flower-box">
+        <div class="pic"><img src="b20.jpg" class="flower-img"></div>
+        <h2 class="flower-title">Perfume gift box</h2>
+        <span class="flower-price">50000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+
+<div class="flower-box">
+        <div class="pic"><img src="b29.jpg" class="flower-img"></div>
+        <h2 class="flower-title">DIOR perfume box</h2>
+        <span class="flower-price">90000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+
+<div class="flower-box">
+        <div class="pic"><img src="b31.jpg" class="flower-img"></div>
+        <h2 class="flower-title">GUCCI perfume box</h2>
+        <span class="flower-price">90000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+
+<div class="flower-box">
+        <div class="pic"><img src="b19.jpg" class="flower-img"></div>
+        <h2 class="flower-title">Jomalone perfume gift box</h2>
+        <span class="flower-price">80000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+
+
+
+
+
+<div class="flower-box">
+        <div class="pic"><img src="per1.jpg" class="flower-img"></div>
+        <h2 class="flower-title">Black Opilum</h2>
+        <span class="flower-price">50000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+
+<div class="flower-box">
+        <div class="pic"><img src="per18.jpg" class="flower-img"></div>
+        <h2 class="flower-title">CHANEL</h2>
+        <span class="flower-price">90000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+<div class="flower-box">
+        <div class="pic"><img src="per3.jpg" class="flower-img"></div>
+        <h2 class="flower-title">VERSACE</h2>
+        <span class="flower-price">90000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+
+<div class="flower-box">
+        <div class="pic"><img src="per4.jpg" class="flower-img"></div>
+        <h2 class="flower-title">Daisy</h2>
+        <span class="flower-price">35000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+
+<div class="flower-box">
+        <div class="pic"><img src="per17.jpg" class="flower-img"></div>
+        <h2 class="flower-title">CHANEL</h2>
+        <span class="flower-price">90000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+
+<div class="flower-box">
+        <div class="pic"><img src="per6.jpg" class="flower-img"></div>
+        <h2 class="flower-title">Dior</h2>
+        <span class="flower-price">90000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+
+<div class="flower-box">
+        <div class="pic"><img src="per7.jpg" class="flower-img"></div>
+        <h2 class="flower-title">Daisy dream</h2>
+        <span class="flower-price">30000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+
+<div class="flower-box">
+        <div class="pic"><img src="per10.jpg" class="flower-img"></div>
+        <h2 class="flower-title">Twilly</h2>
+        <span class="flower-price">50000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+
+<div class="flower-box">
+        <div class="pic"><img src="per12.jpg" class="flower-img"></div>
+        <h2 class="flower-title">Cherry Bolssom</h2>
+        <span class="flower-price">30000 MMK</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+    </div>
+  </div>
+  <script src="cartjs.js"></script>
+</body>
+</html>

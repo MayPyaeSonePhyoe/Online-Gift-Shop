@@ -1,0 +1,1229 @@
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <title>HTML CSS Responsive Website Design</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+<style>
+body {
+ 	margin: 0; 
+ 	padding: 0;
+ 	font-family: montserrat;
+}
+nav {
+ 	display: -webkit-flex;
+ 	display: -moz-flex;
+ 	display: -ms-flex;
+ 	display: -o-flex;
+ 	display: flex;
+ 	justify-content: space-between;
+ 	align-items: center;
+ 	padding: 20px 100px;
+ 	/*background-color:blue;*/
+    	background:#000300;
+}
+#nn{
+	background-color:white;
+}
+.logo {
+ 	font-size: 28px;
+ 	color:green;
+	font-weight: bold;
+ 	text-transform: uppercase;
+ 	font-family: montserrat;
+ 	padding: 0 15px;
+}
+.menu ul li {
+ 	display: inline-block;
+ 	margin: 0 15px;
+}
+.menu ul li a {
+ 	text-decoration: none;
+ 	cursor: pointer;
+ 	font-weight: bold;
+ 	font-size: 18px;
+ 	text-transform: uppercase;
+ 	font-family: montserrat;
+ 	color:green;
+ 	padding: 5px 15px;
+}
+.menu ul li a:hover{
+    	background:skyblue;
+}
+.socials a {
+ 	text-decoration: none;
+ 	background:green;
+ 	color:white;
+ 	padding: 10px 35px;
+	border-radius:10px;
+}
+.socials a:focus{
+	color:gold;
+}
+.image{
+ 	height: 500px;
+	background-image:url('tulip.jpg');
+	background-size:100% 100%;
+ 	background-repeat: no-repeat;
+}
+.banner-text {
+ 	color:#cacc90;
+ 	position: absolute;
+	top: 50%;
+ 	left: 26%;
+ 	transform: translate(-50%, -50%);
+ 	text-align: left;
+}
+.banner-text h1 {
+ 	font-size: 60px;
+	 margin: 0;
+}
+.banner-text p {
+	 margin: 15px 0 40px;
+}
+.banner-text button {
+	 background: #142B6F;
+	 border: none;
+	 outline: none;
+	 color: #fff;
+	 padding: 10px 30px;
+	 font-size: 20px;
+	 font-family: montserrat;
+	 display: inline-block;
+}
+
+@media (max-width: 1000px) {
+ nav {
+  	flex-direction: column;
+  	align-items: flex;
+ }
+ .menu ul {
+  	padding: 0;
+ }
+ .menu ul li {
+  	margin: 0 15px 0 0;
+ }
+ .socials {
+  	margin-top: 25px;
+ }
+ .banner-text {
+  	left: 50%;
+  	text-align: center;
+  	width: 70%;
+ }
+ .banner-text h1 {
+        font-size: 40px;
+    }
+}
+@media (max-width: 600px) {
+ .logo {
+ 	 margin-top: 0;
+	font-size:17px;
+ }
+ nav {
+  	padding: 15px;
+ }
+ .menu ul li a {
+  	font-size: 10px;
+        padding: 5px;
+ }
+ /*.socials {
+  	display: none;
+ }*/
+ .banner-text {
+  	left: 50%;
+  	text-align: center;
+  	width: 80%;
+ }
+  .banner-text h1 {
+        font-size: 18px;
+    }
+ .banner-text p {
+  	margin: 15px 0;
+  	font-size: 11px;
+ }
+  /*.banner-text button {
+        font-size: 12px;
+    }*/
+}
+.ee{
+	text-transform:uppercase;
+	margin-left:20px;
+}
+.ee:hover{
+	background-color:#E5C1CD;
+	color:darkgreen;
+	display:inline-block;
+}
+.about{
+	color:gray;
+	margin-left:30px;
+	border:1px solid black;
+	padding:10px 15px;
+}
+.about1{
+	padding:10px 12px;
+}
+input[type=text], select, textarea {
+  	width: 100%;
+  	padding: 12px;
+  	border: 1px solid #ccc;
+ 	border-radius: 4px;
+  	box-sizing: border-box;
+  	margin-top: 6px;
+  	margin-bottom: 16px;
+  	resize: vertical;
+}
+
+input[type=submit] {
+  	background-color: #04AA6D;
+  	color: white;
+ 	padding: 12px 20px;
+ 	border: none;
+ 	border-radius: 4px;
+  	cursor: pointer;
+}
+
+input[type=submit]:hover {
+  	background-color: #45a049;
+}
+.container-lg{
+	display:flex;
+}
+
+.container {
+  	border-radius:8px;
+	width:500px;
+	height:400px;
+  	background-color: #f2f2f2;
+  	padding:20px;
+	margin-left:30px;
+}
+.flex-container{
+	  display: flex;
+  	flex-wrap: nowrap;
+	gap:5rem;}
+
+.all{
+  box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.2);
+  max-width:300px;	
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  background-color:pink;
+}
+
+.all  button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.all button:hover 
+{
+  opacity: 0.7;
+  color:grey;
+}
+
+#flower{
+            width:80%;
+            margin:100px auto 50px;
+            display:grid;
+            grid-template-columns:auto auto auto;
+            grid-gap:25px;
+        }
+
+#crochet{
+            width:80%;
+            margin:100px auto 50px;
+            display:grid;
+            grid-template-columns:auto auto auto;
+            grid-gap:25px;
+        }
+#toy{
+            width:80%;
+            margin:100px auto 50px;
+            display:grid;
+            grid-template-columns:auto auto auto;
+            grid-gap:25px;
+        }
+
+#accessory{
+            width:80%;
+            margin:100px auto 50px;
+            display:grid;
+            grid-template-columns:auto auto auto;
+            grid-gap:25px;
+        }
+
+#haccessory{
+            width:80%;
+            margin:100px auto 50px;
+            display:grid;
+            grid-template-columns:auto auto auto;
+            grid-gap:25px;
+        }
+
+#gcard{
+            width:80%;
+            margin:100px auto 50px;
+            display:grid;
+            grid-template-columns:auto auto auto;
+            grid-gap:25px;
+        }
+
+#gbox{
+            width:80%;
+            margin:100px auto 50px;
+            display:grid;
+            grid-template-columns:auto auto auto;
+            grid-gap:25px;
+        }
+
+#perfume{
+            width:80%;
+            margin:100px auto 50px;
+            display:grid;
+            grid-template-columns:auto auto auto;
+            grid-gap:25px;
+        }
+.flo{
+	background-color:pink;
+	color:purple;
+	font-size:18px;
+	min-width:100px;4
+	padding:10px 15px;
+	margin-top:20px;
+	margin-left:20px;
+	border-radius:10px;
+}
+.flo:hover{
+	background-color:darkcyan;
+}
+
+.cro{
+	background-color:pink;
+	color:purple;
+	font-size:18px;
+	min-width:100px;
+	padding:10px 15px;
+	margin-top:20px;
+	margin-left:20px;
+	border-radius:10px;
+}
+.cro:hover{
+	background-color:lightblue;
+}
+
+.to{
+	background-color:pink;
+	color:purple;
+	font-size:18px;
+	min-width:100px;
+	padding:10px 15px;
+	margin-top:20px;
+	margin-left:20px;
+	border-radius:10px;
+}
+.to:hover{
+	background-color:lightblue;
+}
+.acc{
+	background-color:pink;
+	color:purple;
+	font-size:18px;
+	min-width:100px;
+	padding:10px 15px;
+	margin-top:20px;
+	margin-left:20px;
+	border-radius:10px;
+}
+.acc:hover{
+	background-color:lightblue;
+}
+
+.hair{
+	background-color:pink;
+	color:purple;
+	font-size:18px;
+	min-width:100px;
+	padding:10px 15px;
+	margin-top:20px;
+	margin-left:20px;
+	border-radius:10px;
+}
+.hair:hover{
+	background-color:lightblue;
+}
+
+.card{
+	background-color:pink;
+	color:purple;
+	font-size:18px;
+	min-width:100px;
+	padding:10px 15px;
+	margin-top:20px;
+	margin-left:20px;
+	border-radius:10px;
+}
+.card:hover{
+	background-color:lightblue;
+}
+.box{
+	background-color:pink;
+	color:purple;
+	font-size:18px;
+	min-width:100px;
+	padding:10px 15px;
+	margin-top:20px;
+	margin-left:20px;
+	border-radius:10px;
+}
+.box:hover{
+	background-color:lightblue;
+}
+.per{
+	background-color:pink;
+	color:purple;	
+	font-size:18px;
+	min-width:100px;
+	padding:10px 15px;
+	margin-top:20px;
+	margin-left:20px;
+	border-radius:10px;
+}
+.per:hover{
+	background-color:lightblue;
+}
+#flex{
+	display:flex;
+	justify-content:space-between;
+}
+p{
+	color:#FFD7D7;
+}
+.price{
+	color:purple;
+}
+</style>    
+</head>
+<body>
+    <div class="header">
+        <nav id="nn">
+            <div class="logo">Daily Shopping </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="latest.html">Latest items</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                    <li><a href="LearnMore.html">Learn More</a></li>
+       		</ul>
+            </div>
+            
+        </nav>
+	<div class="image">
+        <div class="banner-text">
+            <h1>Make order<br>from us</h1>
+            <p>If I could I would give you the world, but all I can do is just offer you my love.</p>
+           
+        </div>
+	</div>        
+    </div>
+
+<div id="flex">
+<button id="ff" class="flo">Bouquets</button>
+<button id="cc" class="cro">Crochets</button>
+<button id="tt" class="to">Toys</button>
+<button id="aa" class="acc">Accessories</button>
+<button id="hh" class="hair">Hair Accessories</button>
+<button id="gc" class="card">Gift Cards</button>
+<button id="gb" class="box">Gift Boxes</button>
+<button id="pp" class="per">Perfumes</button>
+</div>
+
+<!--For Flower-->
+         <div class="flex-container">
+
+	<div id="flower">
+               <div class="all">
+  			<img src="f1.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>Carnation Bouquet</h1>
+  			<p class="price">30,000 MMK</p>
+		</div>
+
+ 		<div class="all">
+  			<img src="f56.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>Pink Rose Bouquet</h1>
+  			<p class="price">20,000MMK</p>
+		</div>
+
+ 		<div class="all">
+  			<img src="f17.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>Red Rose Bouquet</h1>
+  			<p class="price">20,000MMK</p>
+		</div>
+
+		<div class="all">
+  			<img src="f32.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>Orchit Bouquet</h1>
+  			<p class="price">30,000MMK</p>
+		</div>
+
+ 		<div class="all">
+  			<img src="f5.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>Daisy Bouquet</h1>
+  			<p class="price">20,000MMK</p>
+		</div>
+
+ 		<div class="all">
+  			<img src="f6.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>Lily Bouquet</h1>
+  			<p class="price">30,000MMK</p>
+		</div>
+		<div class="all">
+  			<img src="f35.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>Tulip Bouquet</h1>
+  			<p class="price">30,000MMK</p>
+		</div>
+		<div class="all">
+  			<img src="f48.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>Pink Baby Breath Bouquet</h1>
+  			<p class="price">20,000MMK</p>
+		</div>
+		<div class="all">
+  			<img src="f9.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>Marigold Bouquet</h1>
+  			<p class="price">25,000MMK</p>
+		</div>
+		<div class="all">
+  			<img src="f52.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>Purple Baby Breath Bouquet</h1>
+  			<p class="price">20,000MMK</p>
+		</div>
+		<div class="all">
+  			<img src="f11.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>Aster Bouquet</h1>
+  			<p class="price">30,000MMK</p>
+		</div>
+		<div class="all">
+  			<img src="f12.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>Sunflower Bouquet</h1>
+  			<p class="price">20,000MMK</p>
+		</div>
+		
+        </div>
+   </div>
+
+<!--For Crochet-->
+         <div class="flex-container">
+
+	<div id="crochet">
+               <div class="all">
+  			<img src="p1.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>Crochet Rabbit</h1>
+  			<p class="price">50,000 MMK</p>
+		</div>
+
+ 		<div class="all">
+  			<img src="p43.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>Crochet Flower Bouquet</h1>
+  			<p class="price">50,000MMK</p>
+		</div>
+
+ 		<div class="all" >
+  			<img src="p3.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>Crochet Flowers</h1>
+  			<p class="price">30,000MMK</p>
+  		
+		</div>
+
+		<div class="all">
+  			<img src="p4.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>Crochet Flower Plant</h1>
+  			<p class="price">35,000MMK</p>
+		</div>
+
+ 		<div class="all">
+  			<img src="p5.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>Crochet Tulip Bouquet</h1>
+  			<p class="price">15,000MMK</p>
+		</div>
+
+ 		<div class="all">
+  			<img src="p14.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>Crochet Rabbit plant</h1>
+  			<p class="price">20,000MMK</p>
+		</div>
+		<div class="all">
+  			<img src="p7.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>Crochet Carnation Bouqet</h1>
+  			<p class="price">20,000MMK</p>
+		</div>
+		<div class="all">
+  			<img src="p44.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>Crochet Dinosaur</h1>
+  			<p class="price">20,000MMK</p>
+		</div>
+		<div class="all">
+  			<img src="p37.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>Crochet Lama Doll</h1>
+  			<p class="price">10,000MMK</p>
+		</div>
+		<div class="all">
+  			<img src="p16.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>Crochet Girl Doll</h1>
+  			<p class="price">30,000MMK</p>
+		</div>
+		<div class="all">
+  			<img src="p17.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>Crochet Rabbit Doll</h1>
+  			<p class="price">25,000MMK</p>
+		</div>
+		<div class="all">
+  			<img src="p10.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>Crochet Keychain</h1>
+  			<p class="price">10,000MMK</p>
+		</div>
+		
+        </div>
+   </div>
+
+<!--For Toy -->                                                                                                                                                                                                                                                                                                                                                                                                
+        <div class="flex-container">
+
+	<div id="toy">
+               <div class="all">
+  			<img src="doll13.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>Duck Doll</h1>
+  			<p class="price">10,000MMK</p>
+		</div>
+
+		<div class="all">
+  			<img src="doll2.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>Pig Doll</h1>
+  			<p class="price">12,000MMK</p>
+		</div>
+
+		<div class="all">
+  			<img src="doll3.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>Rabbit Doll</h1>
+  			<p class="price">15,000MMK</p>
+		</div>
+
+		<div class="all">
+  			<img src="doll4.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>Lego Doll</h1>
+  			<p class="price">30,000MMK</p>
+		</div>
+
+		<div class="all">
+  			<img src="doll5.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>Big Bear Doll</h1>
+  			<p class="price">80,000MMK</p>
+		</div>
+		<div class="all">
+  			<img src="doll6.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>Stitch Doll</h1>
+  			<p class="price">10,000MMK</p>
+		</div>
+		<div class="all">
+  			<img src="doll7.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>Frog Doll</h1>
+  			<p class="price">20,000MMK</p>
+		</div>
+		<div class="all">
+  			<img src="doll8.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>Dog Doll</h1>
+  			<p class="price">15,000MMK</p>
+		</div>
+		<div class="all">
+  			<img src="doll9.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>Red Panda Doll</h1>
+  			<p class="price">30,000MMK</p>
+		</div>
+
+		<div class="all">
+  			<img src="doll10.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>Octopus Doll</h1>
+  			<p class="price">15,000MMK</p>
+		</div>
+
+		<div class="all">
+  			<img src="doll11.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>Flower Doll</h1>
+  			<p class="price">10,000MMK</p>
+		</div>
+
+	
+        </div>
+   </div>
+
+
+<!--For Accessories-->                                                                                                                                                                                                                                                                                                                                                                                                
+        <div class="flex-container">
+
+	<div id="accessory">
+               
+		<div class="all">
+  			<img src="r11.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>Gold Ring</h1>
+  			<p class="price">1,000,000 MMK</p>
+		</div>
+
+		<div class="all">
+  			<img src="r3.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>Gold Ring</h1>
+  			<p class="price">1,000,000 MMK</p>
+		</div>
+
+		<div class="all">
+  			<img src="r15.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>Solitaire Flower</h1>
+  			<p class="price">2,000,000 MMK</p>
+		</div>
+
+		<div class="all">
+  			<img src="r5.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>Amethyst Promise Ring</h1>
+  			<p class="price">2,000,000 MMK</p>
+		</div>
+		<div class="all">
+  			<img src="r6.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>Pink Cushion Cut EVN Diamond</h1>
+  			<p class="price">3,000,000 MMk</p>
+		</div>
+		<div class="all">
+  			<img src="r24.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>Gold with Red Stone Heart</h1>
+  			<p class="price">1,000,000 MMK</p>
+		</div>
+		<div class="all">
+  			<img src="r8.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>Overnight Mount</h1>
+  			<p class="price">2,000,000 MMK</p>
+		</div>
+		<div class="all">
+  			<img src="r9.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>Cubic Heart</h1>
+  			<p class="price">2,000,000 MMK</p>
+		</div>
+		<div class="all">
+  			<img src="r7.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>18K White Gold</h1>
+  			<p class="price">2,000,000 MMK</p>
+		</div>
+
+		<div class="all">
+  			<img src="n8.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>Sweet Crystal Moon</h1>
+  			<p class="price">80,000 MMK</p>
+		</div>
+
+		<div class="all">
+  			<img src="n7.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>Eternal Love of Dream</h1>
+  			<p class="price">80,000 MMK</p>
+		</div>
+
+		<div class="all">
+  			<img src="n11.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>Circle Sticker With Silk</h1>
+  			<p class="price">90,000 MMK</p>
+		</div>
+
+		<div class="all">
+  			<img src="n5.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>Gold Star Necklace</h1>
+  			<p class="price">90,000 MMK</p>
+		</div>
+
+		<div class="all">
+  			<img src="n2.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>Angle Wings </h1>
+  			<p class="price">90,000 MMK</p>
+		</div>
+
+		<div class="all">
+  			<img src="c7.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>Moonstone FishTail</h1>
+  			<p class="price">90,000 MMK</p>
+		</div>
+
+		<div class="all">
+  			<img src="c2.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>Rose Gold Bracelet</h1>
+  			<p class="price">90,000 MMK</p>
+		</div>
+
+		<div class="all">
+  			<img src="c10.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>PinkCushion Bracelet</h1>
+  			<p class="price">80,000 MMK</p>
+		</div>
+
+		<div class="all">
+  			<img src="c17.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>Charm Bracelet</h1>
+  			<p class="price">80,000 MMK</p>
+		</div>
+
+		<div class="all">
+  			<img src="c12.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>Pearl and Goldstone Charm</h1>
+  			<p class="price">80,000 MMK</p>
+		</div>
+		
+        </div>
+   </div>
+
+
+<!--For Hair Accessories -->                                                                                                                                                                                                                                                                                                                                                                                                
+        <div class="flex-container">
+
+	<div id="haccessory">
+               <div class="all">
+  			<img src="h1.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>18k gold hair claws</h1>
+  			<p class="price">10,000MMK</p>
+		</div>
+
+		<div class="all">
+  			<img src="h2.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>CHANEL hair clip</h1>
+  			<p class="price">50,000MMK</p>
+		</div>
+
+		<div class="all">
+  			<img src="h3.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>CHANEL hair clip</h1>
+  			<p class="price">80,000MMK</p>
+		</div>
+
+		<div class="all">
+  			<img src="h4.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>PRADA hair clip</h1>
+  			<p class="price">50,000MMK</p>
+		</div>
+
+		<div class="all">
+  			<img src="h5.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>GUCCI hair pin</h1>
+  			<p class="price">50,000MMK</p>
+		</div>
+		<div class="all">
+  			<img src="h6.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>BURBERRY hair pin</h1>
+  			<p class="price">50,000MMK</p>
+		</div>
+		<div class="all">
+  			<img src="h7.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>GUCCI hair pin</h1>
+  			<p class="price">60,000MMK</p>
+		</div>
+		<div class="all">
+  			<img src="h8.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>PRADA hair pin</h1>
+  			<p class="price">30,000MMK</p>
+		</div>
+		<div class="all">
+  			<img src="h17.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>Pearl hair clip</h1>
+  			<p class="price">15,000MMK</p>
+		</div>
+
+		<div class="all">
+  			<img src="h10.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>Project hair clips</h1>
+  			<p class="price">10,000MMK</p>
+		</div>
+
+		<div class="all">
+  			<img src="h11.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>DIOR hair clip set</h1>
+  			<p class="price">80,000MMK</p>
+		</div>
+
+		<div class="all">
+  			<img src="h21.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>Faux pearl hair tie</h1>
+  			<p class="price">15,000MMK</p>
+		</div>
+		<div class="all">
+  			<img src="h13.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>DIOR scrunchy</h1>
+  			<p class="price">80,000MMK</p>
+
+		</div>
+		<div class="all">
+  			<img src="h18.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>Asthetic surnchies</h1>
+  			<p class="price">10,000MMK</p>
+		</div>
+		<div class="all">
+  			<img src="h15.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>CELINE scrunchy </h1>
+  			<p class="price">50,000MMK</p>
+		</div>
+		<div class="all">
+  			<img src="h16.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>CELINE scrunchy brown silk</h1>
+  			<p class="price">50,000MMK</p>
+		</div>
+
+        </div>
+   </div>
+
+
+        </div>
+   </div>
+
+
+<!--For  Gift cards-->                                                                                                                                                                                                                                                                                                                                                                                                
+     <div class="flex-container">
+	<div id="gcard">
+               <div class="all">
+  			<img src="card1.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>Asthetic gift card</h1>
+  			<p class="price">20,000MMK</p>
+		</div>
+
+		<div class="all">
+  			<img src="card2.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>White gift card</h1>
+  			<p class="price">15,000MMK</p>
+		</div>
+
+		<div class="all">
+  			<img src="card14.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>Colorful gift card</h1>
+  			<p class="price">10,000MMK</p>
+		</div>
+
+		<div class="all">
+  			<img src="card8.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>Ribbon gift card</h1>
+  			<p class="price">10,000MMK</p>
+		</div>
+
+		<div class="all">
+  			<img src="card11.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>Butterfly gift card</h1>
+  			<p class="price">30,000MMK</p>
+		</div>
+
+		<div class="all">
+  			<img src="card13.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>Flower gift card</h1>
+  			<p class="price">12,000MMK</p>
+		</div>
+		<div class="all">
+  			<img src="card7.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>Gift card with box</h1>
+  			<p class="price">50,000MMK</p>
+		</div>
+		<div class="all">
+  			<img src="card3.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>Simple gift card</h1>
+  			<p class="price">50,00MMK</p>
+		</div>
+		<div class="all">
+  			<img src="card9.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>Gift card with emvelop</h1>
+  			<p class="price">80,00MMK</p>
+		</div>
+		
+     </div>
+   </div>
+
+<!--For Gift Boxes-->                                                                                                                                                                                                                                                                                                                                                                                                
+     <div class="flex-container">
+	<div id="gbox">
+               <div class="all">
+  			<img src="b1.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>Mixed items gift box</h1>
+  			<p class="price">30,000MMK</p>
+		</div>
+
+		<div class="all">
+  			<img src="b2.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>Relax-candle gift box</h1>
+  			<p class="price">50,000MMK</p>
+		</div>
+
+		<div class="all">
+  			<img src="b3.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>Mixed items gift box</h1>
+  			<p class="price">30,000MMK</p>
+		</div>
+
+		<div class="all">
+  			<img src="b4.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>Coffee gift box</h1>
+  			<p class="price">40,000MMK</p>
+		</div>
+
+		<div class="all">
+  			<img src="b5.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>Bath items gift box</h1>
+  			<p class="price">30,000MMK</p>
+		</div>
+
+		<div class="all">
+  			<img src="b6.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>Handmade items gift box</h1>
+  			<p class="price">20,000MMK</p>
+		</div>
+		<div class="all">
+  			<img src="b7.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>Scrunchies gift box</h1>
+  			<p class="price">20,000MMK</p>
+		</div>
+		<div class="all">
+  			<img src="b28.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>Accessories box</h1>
+  			<p class="price">50,000MMK</p>
+		</div>
+		<div class="all">
+  			<img src="b10.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>Accessories box</h1>
+  			<p class="price">60,000MMK</p>
+		</div>
+		<div class="all">
+  			<img src="b23.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>3CE lipsticks box</h1>
+  			<p class="price">120,000MMK</p>
+		</div>
+		<div class="all">
+  			<img src="b12.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>Makeup gift box</h1>
+  			<p class="price">50,000MMK</p>
+		</div>
+		<div class="all">
+  			<img src="b13.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>Makeup gift box</h1>
+  			<p class="price">30,000MMK</p>
+		</div>
+		<div class="all">
+  			<img src="b14.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>3CE lipsticks set box</h1>
+  			<p class="price">150000MMK</p>
+		</div>
+		<div class="all">
+  			<img src="b15.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>3CE makeup set box</h1>
+  			<p class="price">120000MMK</p>
+		</div>
+		<div class="all">
+  			<img src="b22.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>HANDAIYAN lipstick box</h1>
+  			<p class="price">50,000MMK</p>
+		</div>
+		<div class="all">
+  			<img src="b17.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>Perfume gift box</h1>
+  			<p class="price">30,000MMK</p>
+		</div>
+		<div class="all">
+  			<img src="b20.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>Perfume gift box</h1>
+  			<p class="price">50,000MMK</p>
+		</div>
+		<div class="all">
+  			<img src="b29.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>DIOR perfume box</h1>
+  			<p class="price">90000MMK</p>
+		</div>
+		<div class="all">
+  			<img src="b31.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>GUCCI perfume box</h1>
+  			<p class="price">90000MMK</p>
+		</div>
+		<div class="all">
+  			<img src="b19.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>Jomalone perfume gift box</h1>
+  			<p class="price">80,000MMK</p>
+		</div>
+		
+
+        </div>
+   </div>
+
+<!--For   Perfume-->                                                                                                                                                                                                                                                                                                                                                                                                
+     <div class="flex-container">
+	<div id="perfume">
+               <div class="all">
+  			<img src="per1.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>Black Opilum</h1>
+  			<p class="price">50,000MMK</p>
+		</div>
+
+		<div class="all">
+  			<img src="per18.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>CHANEL</h1>
+  			<p class="price">90000MMK</p>
+		</div>
+
+		<div class="all">
+  			<img src="per3.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>VERSACE</h1>
+  			<p class="price">90000MMK</p>
+		</div>
+
+		<div class="all">
+  			<img src="per4.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>Daisy</h1>
+  			<p class="price">35,000MMK</p>
+		</div>
+
+		<div class="all">
+  			<img src="per17.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>CHANEL</h1>
+  			<p class="price">90000MMK</p>
+		</div>
+
+		<div class="all">
+  			<img src="per6.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>Dior</h1>
+  			<p class="price">90000MMK</p>
+		</div>
+		<div class="all">
+  			<img src="per7.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>Daisy dream</h1>
+  			<p class="price">30,000MMK</p>
+		</div>
+		<div class="all">
+		<img src="per10.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>Twilly</h1>
+  			<p class="price">50,000MMK</p>
+		</div>
+		<div class="all">
+  			<img src="per12.jpg" alt="Denim Jeans" style="width:100%">
+  			<h1>Cherry Bolssom</h1>
+  			<p class="price">30,000MMK</p>
+
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+    $("#ff").click(function(){
+    $("#flower").toggle();
+    $("#crochet").hide();
+    $("#toy").hide();
+    $("#accessory").hide();
+    $("#haccessory").hide();
+    $("#gcard").hide();
+    $("#gbox").hide();
+    $("#perfume").hide();
+    });
+});
+
+$(document).ready(function(){
+    $("#cc").click(function(){
+    $("#crochet").toggle();
+    $("#flower").hide();
+    $("#toy").hide();
+    $("#accessory").hide();
+    $("#haccessory").hide();
+    $("#gcard").hide();
+    $("#gbox").hide();
+    $("#perfume").hide();
+
+    });
+});
+
+$(document).ready(function(){
+    $("#tt").click(function(){
+    $("#toy").toggle();
+    $("#crochet").hide();
+    $("#flower").hide();
+    $("#accessory").hide();
+    $("#haccessory").hide();
+    $("#gcard").hide();
+    $("#gbox").hide();
+    $("#perfume").hide();
+
+    });
+});
+
+$(document).ready(function(){
+    $("#aa").click(function(){
+    $("#accessory").toggle();
+    $("#crochet").hide();
+    $("#toy").hide();
+    $("#flower").hide();
+    $("#haccessory").hide();
+    $("#gcard").hide();
+    $("#gbox").hide();
+    $("#perfume").hide();
+
+    });
+});
+
+$(document).ready(function(){
+    $("#hh").click(function(){
+    $("#haccessory").toggle();
+    $("#crochet").hide();
+    $("#toy").hide();
+    $("#accessory").hide();
+    $("#flower").hide();
+    $("#gcard").hide();
+    $("#gbox").hide();
+    $("#perfume").hide();
+
+    });
+});
+
+$(document).ready(function(){
+    $("#gc").click(function(){
+    $("#gcard").toggle();
+    $("#crochet").hide();
+    $("#toy").hide();
+    $("#accessory").hide();
+    $("#haccessory").hide();
+    $("#flower").hide();
+    $("#gbox").hide();
+    $("#perfume").hide();
+
+    });
+});
+
+$(document).ready(function(){
+    $("#gb").click(function(){
+    $("#gbox").toggle();
+    $("#crochet").hide();
+    $("#toy").hide();
+    $("#accessory").hide();
+    $("#haccessory").hide();
+    $("#gcard").hide();
+    $("#flower").hide();
+    $("#perfume").hide();
+
+    });
+});
+
+$(document).ready(function(){
+    $("#pp").click(function(){
+    $("#perfume").toggle();
+    $("#crochet").hide();
+    $("#toy").hide();
+    $("#accessory").hide();
+    $("#haccessory").hide();
+    $("#gcard").hide();
+    $("#gbox").hide();
+    $("#flower").hide();
+
+    });
+});
+</script>
+
+</body>
+
+</html>
